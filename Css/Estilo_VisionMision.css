@@ -1,0 +1,102 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+    height: 10vh;
+    background-color: #022859;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white; /* Color del texto de los enlaces */
+    /*font-size: 18px;*/
+    transition: color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+    .nav-link:hover {
+        color: #F2CD13; /* Color al pasar el mouse sobre el enlace */
+    }
+
+    .nav-link:active, .nav-link:focus {
+        color: #FFD700; /* Color al presionar el enlace y mantenerlo seleccionado */
+    }
+
+.logo img {
+    width: 150px; /* Ajusta el tamaño del logo según tus necesidades */
+    height: 100%;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px; /* Espacio entre los iconos */
+}
+
+    .social-icons a img {
+        width: 30px; /* Ajusta el tamaño de los iconos según tus necesidades */
+        height: 30px;
+    }
+
+section {
+    width: 100%;
+    height: 80vh;
+    /*background-color: #F2E5A0;*/ /*#F2E5A0; #f0f0f0*/
+    border-top: 3px solid #F2CD13;
+    border-bottom: 3px solid #F2CD13;
+}
+
+/* Estilos para la sección de misión y visión */
+.mission-vision {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+}
+
+/* Estilos para misión y visión */
+.mission, .vision { 
+    width: 50%;
+    text-align: center;
+    border-radius: 5px;
+    padding: 2%;
+    font-size:30px;
+}
+
+.vision {
+    margin-left: 20px;
+}
+
+.mission-vision::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 80%;
+    background-color: #F2CD13;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+footer {
+    width: 100%;
+    height: 10vh;
+    background-color: #022859;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

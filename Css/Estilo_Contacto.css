@@ -1,0 +1,86 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+    height: 10vh;
+    background-color: #022859;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white; /* Color del texto de los enlaces */
+    /*font-size: 18px;*/
+    transition: color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+.nav-link:hover {
+    color: #F2CD13; /* Color al pasar el mouse sobre el enlace */
+}
+
+.nav-link:active, .nav-link:focus {
+    color: #FFD700; /* Color al presionar el enlace y mantenerlo seleccionado */
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px; /* Espacio entre los iconos */
+}
+
+.social-icons a img {
+    width: 30px; /* Ajusta el tamaño de los iconos según tus necesidades */
+    height: 30px;
+}
+
+section {
+    border-top: 3px solid #F2CD13;
+    border-bottom: 3px solid #F2CD13;
+}
+
+.articles-section {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+}
+
+iframe {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    height: 50%;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el contenido si es necesario */
+}
+
+.flex-container img {
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+    width: 50px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+
+footer {
+    width: 100%;
+    height: 10vh;
+    background-color: #022859;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
